@@ -22,7 +22,9 @@ public class MainTask3 {
         };
 
         ByFunction<String> byFunction = s -> "I love you";
-        ByFunction<String> byFunctionInner = s -> "I love you";
+        ByFunction<String> byFunctionInner = r -> byFunction.study();
+        ByFunction<String> byFunctionInnerTrue = r -> byFunctionInner.grow("Hi!");
+        ByFunction.learn();
 
     }
 }
