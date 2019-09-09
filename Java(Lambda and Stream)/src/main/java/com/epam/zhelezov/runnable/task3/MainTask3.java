@@ -20,5 +20,9 @@ public class MainTask3 {
             Integer age = in.nextInt();
             return new Person(name, age);
         };
+
+        ByFunction<String> byFunction = s -> "I love you";
+        ByFunction<String> byFunctionInner = s -> "I love you";
+
     }
 }
