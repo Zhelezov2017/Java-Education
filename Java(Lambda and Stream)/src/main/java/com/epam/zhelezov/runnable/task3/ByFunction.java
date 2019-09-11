@@ -7,6 +7,7 @@ public interface ByFunction<U> {
 
     default String study(){
         System.out.println("Learn!");
+        System.out.println("Love");
         return "People studies";
     }
 
