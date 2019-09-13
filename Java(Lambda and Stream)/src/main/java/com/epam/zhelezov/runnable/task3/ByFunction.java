@@ -6,8 +6,6 @@ public interface ByFunction<U> {
     String grow(U u);
 
     default String study(){
-        System.out.println("Learn!");
-        System.out.println("Love");
         return "People studies";
     }
 
