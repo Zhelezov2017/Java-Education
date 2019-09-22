@@ -11,8 +11,8 @@ public class Main {
     private static volatile List<String> listThreadDemon = new ArrayList<>();
 
     public static void main(String[] args) {
-        //2 threads for include in list
-        Thread thread = new Thread(
+        //Demo thread
+        Thread threadDemo = new Thread(
                 () -> Stream.iterate(1, x->x+1)
                         .limit(1000)
                         .forEach((x)-> {
@@ -30,7 +30,9 @@ public class Main {
                                 e.printStackTrace();
                             }
                         }));
-        thread.start();
+        threadDemo.start();
+
+        //Main thread
         Stream.iterate(1, x->x+1)
                 .limit(1000)
                 .forEach((x)-> {

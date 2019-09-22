@@ -12,6 +12,7 @@
     <modules>
         <module>Java(Lambda and Stream)</module>
         <module>Introduction JVM</module>
+        <module>Multithreading</module>
     </modules>
     <build>
         <plugins>
